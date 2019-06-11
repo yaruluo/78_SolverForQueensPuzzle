@@ -61,10 +61,10 @@ public class SolverForQueensPuzzle {
         // Which has been requested, a base case or recursive case?
 	if( inProgress.accept()){
             // action(s) for base case(s)
-	    System.out.println( "  for debugging: base case detected for..."
-                              + System.lineSeparator()
-                              + inProgress
-                              );
+	    // System.out.println( "  for debugging: base case detected for..."
+            //                   + System.lineSeparator()
+            //                   + inProgress
+            //                   );
 	    solutions.add( new BoardForQueensPuzzle( inProgress));
 	}
             // action for recursive cases
@@ -78,10 +78,10 @@ public class SolverForQueensPuzzle {
 	        recordSolutionsStarted();
 		inProgress.depopulate();
 	    }
-            System.out.println( "  for debugging: recursive case detected for..."
-                              + System.lineSeparator()
-                              + inProgress
-                              );
+            // System.out.println( "  for debugging: recursive case detected for..."
+            //                   + System.lineSeparator()
+            //                   + inProgress
+            //                   );
 	}
     }
 
