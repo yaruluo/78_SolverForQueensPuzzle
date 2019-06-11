@@ -59,21 +59,24 @@ public class SolverForQueensPuzzle {
     private void recordSolutionsStarted() {
 
         // Which has been requested, a base case or recursive case?
-	if( inProgress.accept())
+	if( inProgress.accept()){
             // action(s) for base case(s)
 	    System.out.println( "  for debugging: base case detected for..."
                               + System.lineSeparator()
                               + inProgress
                               );
+	    solutions.add( new BoardForQueensPuzzle( inProgress));
+	}
             // action for recursive cases
             // your code here
-	else{
+	else if( inProgress.lastIsNg()){
 	    for( int file = 0
 	       ; file < inProgress.ranks()
 	       ; file++
 		 ){
 	        inProgress.populate( file);
 	        recordSolutionsStarted();
+		inProgress.depopulate();
 	    }
             System.out.println( "  for debugging: recursive case detected for..."
                               + System.lineSeparator()
