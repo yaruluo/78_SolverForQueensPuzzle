@@ -3,8 +3,7 @@
 ## Yaru's remarks
 
 ### citations / worked with / received help from
-my very very patient friend, Vivian Huynh, in Mr. K's APCS class
-and Greg
+my very very patient friend, Vivian Huynh, in Mr. K's APCS class, Greg, and Yevgeniy in class
 
 
 ## Holmes's remarks

@@ -69,7 +69,7 @@ public class SolverForQueensPuzzle {
 	}
             // action for recursive cases
             // your code here
-	else if( inProgress.lastIsNg()){
+	else if( !inProgress.lastIsNg()){
 	    for( int file = 0
 	       ; file < inProgress.ranks()
 	       ; file++
